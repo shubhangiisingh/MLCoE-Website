@@ -102,9 +102,11 @@ const Navbar = () => {
                             button
                             key={index}
                             onClick={() => {
-                                router.push(`/${item.toLowerCase().replace(' ', '')}`);
+                                const route = item === 'Home' ? '/' : `/${item.toLowerCase().replace(' ', '')}`;
+                                router.push(route);
                                 handleDrawerToggle();
                             }}
+                            
                         >
                             <ListItemText
                                 primary={item}

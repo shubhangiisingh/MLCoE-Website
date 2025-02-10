@@ -3,7 +3,7 @@ import { Box, Typography, Button } from '@mui/material';
 
 function Langchat() {
   return (
-    <Box display="flex" flexDirection="column" bgcolor="#020016">
+    <Box display="flex" flexDirection="column" bgcolor="#020016" >
       <Box
         display="flex"
         flexDirection={{ xs: "column", md: "row" }}
@@ -11,9 +11,10 @@ function Langchat() {
         borderRadius="1.25rem"
         alignItems="center"
         justifyContent="center"
+        paddingTop={{ xs: "3.25rem", md: "3.125rem" }}
       >
         <Box
-          ml={{ xs: "0", md: "0.70rem" }}
+          ml={{ xs: "0", md: "0.70rem"}}
           mt={{ xs: "0.625rem", md: "3.125rem" }}
           sx={{
             width: { xs: "90%", md: "49.4375rem" },

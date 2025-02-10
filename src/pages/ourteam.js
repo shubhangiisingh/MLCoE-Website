@@ -67,7 +67,7 @@ const SplitButton = ({ selectedIndex, setSelectedIndex }) => {
         >
           Our Team
         </Box>
-        <Box sx={{ display: "inline-flex", marginLeft: "5.25rem", marginTop: "2.125rem" }}>
+        <Box sx={{ display: "inline-flex", marginLeft: { xs: "30%", md: "5.25rem" },  marginTop: "2.125rem" }}>
           <ButtonGroup
             variant="contained"
             ref={anchorRef}
@@ -131,7 +131,7 @@ const CardComponent = ({ name, title, image }) => (
   <Card
     sx={{
       width: "15.75rem",
-      height: "18.75rem",
+      height: "20.75rem",
       background: "#FFFFFF",
       display: "flex",
       flexDirection: "column",
